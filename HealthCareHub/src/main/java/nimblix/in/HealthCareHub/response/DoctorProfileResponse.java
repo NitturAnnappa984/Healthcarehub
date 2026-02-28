@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class DoctorProfileResponse {
 
     private Long doctorId;
@@ -14,12 +14,11 @@ public class DoctorProfileResponse {
     private String email;
     private String phone;
     private String qualification;
-    private Integer experienceYears;
+    private Long experienceYears;  // IMPORTANT: must match entity type
 
     private Long specializationId;
     private String specializationName;
 
-    // Hospital info
     private Long hospitalId;
     private String hospitalName;
     private String hospitalAddress;
